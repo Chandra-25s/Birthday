@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+</head>
+
+<body>
+
+    <!-- Background Hearts -->
+    <div class="hearts"></div>
+
+    <!-- Music -->
+    <audio id="bgMusic" loop>
+        <source src="assets/birthday-music.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Opening Screen -->
+    <section class="intro" id="intro">
+
+        <div class="intro-content">
+
+            <div class="gift">🎁</div>
+
+            <h1>Hey Birthday Girl ❤️</h1>
+
+            <p>
+                Someone special has a little surprise for you...
+            </p>
+
+            <button onclick="openSurprise()">
+                Open Your Surprise ✨
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- Main Website -->
+    <main id="mainContent">
+
+        <!-- Hero -->
+        <section class="hero">
+
+            <div class="sparkles"></div>
+
+            <div class="hero-content">
+
+                <p class="small-title">
+                    ✨ A Special Day For A Special Person ✨
+                </p>
+
+                <h1>
+                    Happy Birthday
+                    <span>Beautiful ❤️</span>
+                </h1>
+
+                <p class="hero-text">
+                    Today is not just another day...
+                    <br>
+                    It's the day someone really special came into this world.
+                </p>
+
+                <div class="birthday-date">
+                    🎂 Your Special Day 🎂
+                </div>
+
+                <button class="scroll-btn" onclick="scrollToSection('message')">
+                    Let's Celebrate ↓
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- Message -->
+        <section class="message section" id="message">
+
+            <div class="section-title">
+
+                <span>💌</span>
+
+                <h2>A Little Message For You</h2>
+
+                <div class="line"></div>
+
+            </div>
+
+            <div class="message-card">
+
+                <div class="quote">“</div>
+
+                <p>
+                    Some people enter our lives randomly,
+                    but somehow they become a beautiful part
+                    of our memories.
+                </p>
+
+                <p>
+                    On your special day, I just want to wish you
+                    endless happiness, beautiful moments,
+                    lots of smiles and everything your heart wishes for.
+                </p>
+
+                <p class="highlight">
+                    Keep smiling, keep shining and always stay the
+                    amazing person you are. ❤️
+                </p>
+
+                <div class="signature">
+                    — From Someone Who Wishes You The Best 🌸
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Photos -->
+        <section class="gallery section">
+
+            <div class="section-title">
+
+                <span>📸</span>
+
+                <h2>Beautiful Memories</h2>
+
+                <div class="line"></div>
+
+                <p>
+                    A few moments worth remembering...
+                </p>
+
+            </div>
+
+
+            <div class="photo-grid">
+
+                <div class="photo-card">
+                    <img src="assets/photo1.jpg" alt="Memory">
+                    <div class="photo-overlay">
+                        <span>✨ Beautiful</span>
+                    </div>
+                </div>
+
+                <div class="photo-card">
+                    <img src="assets/photo2.jpg" alt="Memory">
+                    <div class="photo-overlay">
+                        <span>🌸 Lovely Moment</span>
+                    </div>
+                </div>
+
+                <div class="photo-card">
+                    <img src="assets/photo3.jpg" alt="Memory">
+                    <div class="photo-overlay">
+                        <span>❤️ Special</span>
+                    </div>
+                </div>
+
+                <div class="photo-card">
+                    <img src="assets/photo4.jpg" alt="Memory">
+                    <div class="photo-overlay">
+                        <span>✨ Keep Smiling</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Reels / Videos -->
+        <section class="videos section">
+
+            <div class="section-title">
+
+                <span>🎬</span>
+
+                <h2>Your Little Reels</h2>
+
+                <div class="line"></div>
+
+                <p>
+                    Because pictures aren't enough... 😌
+                </p>
+
+            </div>
+
+
+            <div class="video-grid">
+
+                <div class="video-card">
+
+                    <video controls poster="assets/photo1.jpg">
+                        <source src="assets/reel1.mp4" type="video/mp4">
+                    </video>
+
+                    <h3>✨ A Little Memory</h3>
+
+                </div>
+
+
+                <div class="video-card">
+
+                    <video controls poster="assets/photo2.jpg">
+                        <source src="assets/reel2.mp4" type="video/mp4">
+                    </video>
+
+                    <h3>❤️ One More Beautiful Moment</h3>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Birthday Wish -->
+        <section class="wish section">
+
+            <div class="wish-box">
+
+                <div class="balloons">
+                    🎈 🎈 🎈
+                </div>
+
+                <h2>
+                    Make A Wish ✨
+                </h2>
+
+                <p>
+                    Close your eyes...
+                    <br>
+                    Make a beautiful wish...
+                    <br>
+                    And let the universe handle the rest. 🌙
+                </p>
+
+                <button onclick="celebrate()">
+                    Make My Wish 🎂
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- Final -->
+        <section class="final-section">
+
+            <div class="final-content">
+
+                <div class="big-heart">
+                    ❤️
+                </div>
+
+                <h1>
+                    Once Again...
+                </h1>
+
+                <h2>
+                    Happy Birthday! 🎂
+                </h2>
+
+                <p>
+                    May your life always be filled with
+                    happiness, laughter, love and beautiful memories.
+                </p>
+
+                <div class="final-hearts">
+                    💕 ✨ 🌸 ✨ 💕
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Confetti -->
+    <div id="confetti"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
